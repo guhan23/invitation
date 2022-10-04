@@ -1,0 +1,118 @@
+.head {
+  background-image: url("../assets/c2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.header {
+  background-color: rgb(117, 75, 45);
+}
+.nav-link {
+  color: #fff !important;
+  font-family: "Niconne", serif;
+  font-size: 40px;
+}
+.head > .quote {
+  height: 100px;
+  width: 500px;
+  font-family: "Niconne", serif;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+}
+
+.scrolldown {
+    background-color: transparent;
+    font-family: "Niconne", serif;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 42px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    animation:glide 2s ease-in-out alternate infinite;
+  }
+.scrolldown >a {
+    color:  #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .head > .quote {
+        width: 70%;
+        font-size: 7vw;
+      }
+    @keyframes  glide  {
+        from {
+            top: calc(100vh - 500px);
+         }
+         
+         to {
+            top: calc(100vh - 520px);  
+         }
+    }
+    .scrolldown{
+        position: relative;
+        left: calc(50%);
+        top: calc(100vh - 500px);
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .head > .quote {
+        width: 70%;
+      }
+    @keyframes  glide  {
+        from {
+            top: calc(100vh - 540px);   
+         }
+         
+         to {
+            top: calc(100vh - 560px);   
+         }
+    }
+    .scrolldown{
+        position: relative;
+        left: calc(60%);
+        top: calc(100vh - 540px);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    @keyframes  glide  {
+        from {
+            top: calc(100vh - 400px);   
+         }
+         
+         to {
+            top: calc(100vh - 420px);   
+         }
+    }
+    .scrolldown{
+        position: relative;
+        left: calc(100vw - 900px);
+        top: calc(100vh - 400px);   
+    }
+}
+@media screen and (min-width: 1024px) {
+    @keyframes  glide  {
+        from {
+            top: calc(100vh - 400px);   
+         }
+         
+         to {
+            top: calc(100vh - 420px);   
+         }
+    }
+    .scrolldown{
+        position: relative;
+        left: calc(100vw - 900px);
+        top: calc(100vh - 400px);   
+    }
+}

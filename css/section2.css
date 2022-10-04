@@ -1,0 +1,234 @@
+#section02 {
+    background-image: url('../assets/sec31.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#section02 > .content3{
+    position: relative;
+    top: -5%;
+    width: 70%;
+    text-shadow: 2px 2px rgb(183,119,41) ;
+    font-family: 'Dancing Script', serif;
+    font-style: italic;
+}
+#section02 > .content3 > .engage, .wedding{
+    font-size: 30px;
+    color: #fff;
+}
+@keyframes  openevent  {
+    from {
+        opacity: 0;
+     }
+     
+     to {
+        opacity: 1;   
+     }
+}
+.show{
+    display: block;
+    animation: openevent  2s ease-out;
+    background-color: rgba(210,210,210,0.3);
+}
+.hide{
+    display: none;
+}
+#section02 > .content3 > .heading{
+    color: #fff !important;
+    font-family: "Niconne", serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#section02 > .content3 > ul {
+    border-bottom: 2px solid rgb(133, 71, 21);
+}
+#section02 > .content3 >ul> li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.active{
+    background-color: rgba(210,210,210,0.3);
+}
+.scrolldown2 {
+    background-color: transparent;
+    font-family: 'Dancing Script', serif;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    animation:glide2 2s ease-in-out alternate infinite;
+  }
+.scrolldown2 >a {
+    color:  #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 468px) {
+    .nav-link{
+        font-size: 5vw;
+    }
+        .content3{
+            display: none;
+       }
+       .content3-mbl{
+        color: #fff;
+        font-family: 'Dancing Script', serif;
+        line-height: 50px;
+        font-size: 4vw;
+        text-shadow: 1px 1px rgb(183,119,41) ;
+       }
+       .content3-mbl > .timeline {
+        list-style-type: none;
+        position: relative;
+    }
+    .content3-mbl > .timeline:before {
+        content: ' ';
+        background: #d4d9df;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 95vh;
+        z-index: 400;
+    }
+    .content3-mbl > .timeline > li {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    .content3-mbl > .timeline > li:before {
+        content: ' ';
+        background: white;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #7a4e0d;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+    }
+
+    @keyframes  glide2  {
+        from {
+            bottom: calc(-40%); 
+         }
+         
+         to {
+            bottom: calc(-41%);   
+         }
+    }
+    .scrolldown2{
+        position: relative;
+        bottom: calc(-40%); 
+    } 
+}
+
+@media screen and (min-width: 468px)  and (max-width: 859.9px) {
+    .nav-link{
+        font-size: 7vw;
+    }
+        .content3{
+            display: none;
+       }
+       .content3-mbl{
+        color: #fff;
+        font-family: 'Dancing Script', serif;
+        line-height: 50px;
+        font-size: 5vw;
+        text-shadow: 1px 1px rgb(183,119,41) ;
+       }
+       .content3-mbl > .timeline {
+            list-style-type: none;
+            position: relative;
+        }
+        .content3-mbl > .timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
+        .content3-mbl > .timeline > li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .content3-mbl > .timeline > li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #7a4e0d;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+       
+    
+    @keyframes  glide2  {
+        from {
+            bottom: calc(-40%); 
+         }
+         
+         to {
+            bottom: calc(-41%);   
+         }
+    }
+    .scrolldown2{
+        position: relative;
+        left: calc(-44%);
+        bottom: calc(-40%); 
+    } 
+}
+@media screen and (min-width: 860px) and (max-width: 1024px) {
+    .content3-mbl{
+        display: none;
+    }
+    @keyframes  glide2  {
+        from {
+            bottom: calc(-35%); 
+         }
+         
+         to {
+            bottom: calc(-36%);  
+         }
+    }
+    .scrolldown2{
+        position: relative;
+        left: calc(-45%);
+        bottom: calc(-35%);   
+    }
+}
+@media screen and (min-width: 1024px) {
+    .content3-mbl{
+        display: none;
+    }
+    @keyframes  glide2  {
+        from {
+            bottom: calc(-35%); 
+         }
+         
+         to {
+            bottom: calc(-36%);  
+         }
+    }
+    .scrolldown2{
+        position: relative;
+        left: calc(-45%);
+        bottom: calc(-35%);   
+    }
+}
