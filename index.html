@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <style>
+        /* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+      @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+      </style>
+      <link href="./css/head.css" rel="stylesheet">
+      <link href="./css/section1.css" rel="stylesheet">
+      <link href="./css/section2.css" rel="stylesheet">
+      <link href="./css/section3.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      </head>
+<body>
+    <!-- <header>
+        <ul class="nav header justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bride & Groom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">When & Where</a>
+            </li>
+          </ul>
+    </header> -->
+      <div class="head" >
+        <span class="quote">
+          To love is nothing. To be loved is something. But to be loved by the person you love is everything.
+        </span>
+        <div class="scrolldown">
+          <a href="#section01"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div id="section01">
+            <div class="content">
+                <span class="main">Welcome</span><br/> 
+                <span class="main">To The Wedding Celebration</span><br/>
+                <span class="main">Of</span><br/>
+                <span class="sub">Guhan & Meera <i class="fa fa-heart" aria-hidden="true"></i></span><br/>
+            </div>
+            <div class="scrolldown1">
+              <a href="#section02"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+            </div>
+      </div>
+      <div id="section02">
+        <!-- <div class="card card1" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/engage1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Engagement</h5>
+            <p class="card-text text-center"> @7:30 PM 03/12/2022</p>
+          </div>
+        </div>
+        <div class="card card2" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/marriage.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Marriage</h5>
+            <p class="card-text text-center"> @7:00 AM 04/12/2022</p>
+          </div>
+        </div> -->
+        
+          <div class="content3">
+            <h3 class="text-center"></h3>
+            <ul class="nav justify-content-center">
+              <li class="nav-item  active" id="b1">
+                <a class="nav-link" href="#" id="e1" onclick="eventhandle(event)">Engagement <i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item" id="b2">
+                <a class="nav-link" href="#" id="e2" onclick="eventhandle(event)">Wedding <i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            <div id="engage" class="engage show text-center">
+                <span>@7:00 PM</span><br/>
+                <span>December 3<sup>rd</sup>, 2022</span><br/>
+                <span><a target="_blank" href="https://goo.gl/maps/jgCQ9qDQFbde8iis5" style="color: inherit">Milagai Vathal Viyaparigal Mandapam,</a></span><br/>
+                <span>(Near Bus Stand)</span><br/>
+                <span>Sattur - 620203</span>
+            </div>
+            <div id="wedding" class="wedding hide text-center">
+              <span>@8:00 AM </span><br/>
+              <span>December 4, 2022</span><br/>
+              <span><a target="_blank" href="https://goo.gl/maps/jgCQ9qDQFbde8iis5" style="color: inherit">Milagai Vathal Viyaparigal Mandapam,</a></span><br/>
+                <span>(Near Bus Stand)</span><br/>
+              <span>Sattur - 620203</span>
+          </div>
+        </div>
+          <div class="content3-mbl">
+            <ul class="timeline">
+              <li>
+                <a class="nav-link" href="#" >Engagement </a>
+                <p>@7:00 PM December 3, 2022</p>
+                <p><a target="_blank" href="https://goo.gl/maps/jgCQ9qDQFbde8iis5" style="color: inherit">Milagai Vathal Viyaparigal Mandapam,(Near Bus Stand)</a></p>
+                <p>Sattur - 626203</p><br/>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Wedding </a>
+                <p>@8:00 AM December 4, 2022</p>
+                <p><a target="_blank" href="https://goo.gl/maps/jgCQ9qDQFbde8iis5" style="color: inherit">Milagai Vathal Viyaparigal Mandapam,(Near Bus Stand)</a></p>
+                <p>Sattur - 626203</p><br/>
+              </li>
+            </ul>
+          </div>        
+        <div class="scrolldown2">
+          <a href="#section03"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div id="section03">
+        <!-- <div class="cardm">
+        </div> -->
+        <div class="content4">
+          With great excitement and pleasure, We invite you to attend our wedding ceremony.
+        </div>
+      </div>
+    <script >
+          function eventhandle(e) {
+              e.preventDefault();
+              if(e.target.id === "e1"){
+                  document.getElementById("b1").classList.add('active');
+                  document.getElementById("b2").classList.remove('active');
+                  document.getElementById("engage").classList.remove('hide');
+                  document.getElementById("engage").classList.add('show');
+                  document.getElementById("wedding").classList.add('hide');
+                  document.getElementById("wedding").classList.remove('show');
+              }else if(e.target.id === "e2"){
+                  document.getElementById("b2").classList.add('active');
+                  document.getElementById("b1").classList.remove('active');
+                  document.getElementById("engage").classList.remove('show');
+                  document.getElementById("engage").classList.add('hide');
+                  document.getElementById("wedding").classList.remove('hide');
+                  document.getElementById("wedding").classList.add('show');
+              }
+          }
+    </script>
+</body>
+</html>

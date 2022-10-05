@@ -1,0 +1,148 @@
+#section01 {
+    background-image: url('../assets/img3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#section01 > .content{
+    color: rgb(231, 218, 195);
+    font-style: italic;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: 'Dancing Script', serif;
+    line-height: 60px;
+    text-shadow: 2px 2px rgb(183,119,41) ;
+    /*background-color: rgba(210,210,210,0.3); */
+}
+#section01 > .content{
+    width: 60%;
+    position: relative;
+    top: calc(50%);
+    left: calc(30% - 100px);
+}
+#section01 > .content > .main{
+    font-size: 50px !important ;
+}
+#section01 > .content > .sub{
+    font-size: 60px !important;
+}
+
+.scrolldown1 {
+    background-color: transparent;
+    font-family: 'Dancing Script', serif;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    animation:glide1 2s ease-in-out alternate infinite;
+  }
+.scrolldown1 >a {
+    color:  #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    #section01 > .content{
+        width: 60%;
+        position: absolute;
+        top: calc(25%);
+        left: calc(30% - 20px);
+        text-shadow: 1px 2px  #000000;
+    }
+    #section01 > .content > .main{
+        font-size: 9vw !important ;
+    }
+    #section01 > .content > .sub{
+        font-size: 12vw !important;
+    }
+    @keyframes  glide1  {
+        from {
+            bottom: calc(-10%); 
+         }
+         
+         to {
+            bottom: calc(-12%); 
+         }
+    }
+    .scrolldown1{
+        position: absolute;
+        left: calc(44%);
+        top: calc(75%);
+    } 
+  }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #section01 > .content{
+        width: 60%;
+        position: relative;
+        top: calc(25%);
+        left: calc(30% - 70px);
+        text-shadow: 1px 2px  #000000;
+    }
+    #section01 > .content > .main{
+        font-size: 7vw !important ;
+    }
+    #section01 > .content > .sub{
+        font-size: 10vw !important;
+    }
+    @keyframes  glide1  {
+        from {
+            bottom: calc(-10%);   
+         }
+         
+         to {
+            bottom: calc(-13%);   
+         }
+    }
+    .scrolldown1{
+        position: relative;
+        left: calc(44%);
+        bottom: calc(-10%);  
+    } 
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #section01 > .content{
+        top: calc(25%);
+    }
+    @keyframes  glide1  {
+        from {
+            bottom: calc(-20%);  
+         }
+         
+         to {
+            bottom: calc(-22%);   
+         }
+    }
+    .scrolldown1{
+        position: relative;
+        left: calc(44%);
+        bottom: calc(-20%);  
+    } 
+}
+@media screen and (min-width: 1024px) {
+    #section01 > .content{
+        top: calc(25%);
+    }
+
+    @keyframes  glide1  {
+        from {
+            bottom: calc(-15%);   
+         }
+         
+         to {
+            bottom: calc(-17%);   
+         }
+    }
+    .scrolldown1{
+        position: relative;
+        left: calc(45%);
+        bottom: calc(-15%);   
+    }
+}
