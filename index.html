@@ -88,7 +88,7 @@ select {
       <link href="./css/head.css" rel="stylesheet">
       <link href="./css/section1.css" rel="stylesheet">
       <link href="./css/section2.css" rel="stylesheet">
-      <link href="./css/section3.css" rel="stylesheet">
+      <!--<link href="./css/section3.css" rel="stylesheet"> -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
       </head>
 <body>
@@ -110,7 +110,7 @@ select {
           To love is nothing. To be loved is something. But to be loved by the person you love is everything.
         </span>
         <div class="scrolldown">
-          <a href="#section01"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+          <a id="home" href="/"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
         </div>
       </div>
       <div id="section01">
@@ -121,7 +121,7 @@ select {
                 <span class="sub">Guhan & Meera <i class="fa fa-heart" aria-hidden="true"></i></span><br/>
             </div>
             <div class="scrolldown1">
-              <a href="#section02"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+              <a id="page1" href="#" ><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
             </div>
       </div>
       <div id="section02">
@@ -182,7 +182,7 @@ select {
             </ul>
           </div>        
         <div class="scrolldown2">
-          <a href="#section03"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
+          <a id="page2" href="/"><br/><i class="fa fa-angle-down " aria-hidden="true"></i></a>
         </div>
       </div>
       <div id="section03">
@@ -210,6 +210,21 @@ select {
                   document.getElementById("wedding").classList.remove('hide');
                   document.getElementById("wedding").classList.add('show');
               }
+          }
+          var one = document.getElementById("home");
+          one.onclick = function(e){
+            e.preventDefault();
+            document.getElementById("section01").scrollIntoView({behavior: "smooth"})
+          }
+          var page1 = document.getElementById("page1");
+          page1.onclick = function(e){
+            e.preventDefault();
+            document.getElementById("section02").scrollIntoView({behavior: "smooth"})
+          }
+          var page2 = document.getElementById("page2");
+          page2.onclick = function(e){
+            e.preventDefault();
+            document.getElementById("section03").scrollIntoView({behavior: "smooth"})
           }
     </script>
 </body>
