@@ -1,5 +1,5 @@
 #section02 {
-    background-image: url('../assets/sec31.jpg');
+    background-image: url('../assets/page2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,5 +233,61 @@
         position: relative;
         left: calc(-45%);
         bottom: calc(-35%);   
+    }
+}
+#section03{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../assets/page3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* background-color: rgb(228, 167, 126); */
+}
+
+.cardm{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    background-image: url('../assets/meeraguhan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    -moz-box-shadow: 0 0 3px tomato;
+    -webkit-box-shadow: 0 0 3px tomato;
+    box-shadow: 1px 0 3px tomato;
+}
+#section03 > .content4{
+    color: rgb(231, 218, 195);
+    font-style: italic;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: 'Dancing Script', serif;
+    line-height: 60px;
+    font-size: 5vw;
+    text-shadow: 2px 2px rgb(183,119,41) ;
+    margin:10px
+}
+
+@media screen and (max-width: 480px) {
+    #section03 > .content4{
+
+        font-size: 30px;
+        margin-top: 50px;
+        
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #section03 > .content4{
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 768px)  {
+    #section03 > .content4{
+        margin-top: 20%;
     }
 }

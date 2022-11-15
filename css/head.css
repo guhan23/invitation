@@ -1,11 +1,26 @@
+html {
+    overflow-y:scroll;
+}
 .head {
-  background-image: url("../assets/c2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
+@media only screen and (min-width: 768px) {
+    .head {
+        background-image: url("../assets/Home.jpg");
+    }
+} 
+@media only screen and (max-width: 768px) {
+    .head {
+        background-image: url("../assets/couple.jpg");
+    }
+    .head > .quote{
+        visibility: hidden;
+    }
+} 
 .header {
   background-color: rgb(117, 75, 45);
 }
@@ -42,6 +57,11 @@
 .scrolldown >a {
     color:  #fff;
     text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .scrolldown > a > i {
+        color: rgb(12, 7, 43);
+    }
 }
 
 

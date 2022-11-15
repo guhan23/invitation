@@ -1,5 +1,5 @@
 #section01 {
-    background-image: url('../assets/img3.jpg');
+    background-image: url('../assets/page1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@
     text-shadow: 2px 2px rgb(183,119,41) ;
     /*background-color: rgba(210,210,210,0.3); */
 }
+
 #section01 > .content{
     width: 60%;
     position: relative;
