@@ -1,6 +1,9 @@
 html {
     overflow-y:scroll;
 }
+audio{
+    display: none
+}
 .head {
   background-position: center;
   background-repeat: no-repeat;
